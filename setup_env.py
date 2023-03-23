@@ -4,7 +4,7 @@ import subprocess
 # MATLABROOT = "C:\Program Files\MATLAB\R2018b"
 
 # create a new conda environment
-# os.system('conda create -n brain python=3.6 --yes')
+os.system('conda create -n brain python=3.6 --yes')
 
 # install required libraries
 cmds = ['conda activate brain',
