@@ -7,7 +7,7 @@ import subprocess
 os.system('conda create -n brain python=3.6 --yes')
 
 # install required libraries
-cmds = ['conda activate brain',
+cmds = ['source activate brain',
         'pip install pandas',
         'conda install --yes scikit-learn',
         'conda install --yes -c conda-forge scikit-image=0.16.1',
@@ -22,7 +22,7 @@ cmds = ['conda activate brain',
         'pip install keras==2.2.0',
         'pip install h5py',
         'pip install tqdm',
-        'conda deactivate']
+        'source deactivate']
 subprocess.call(' && '.join(cmds), shell=True)
 
 # # install Matlab engine
